@@ -1,84 +1,8 @@
-* {
+html{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-body {
-  color: #06069d;
-}
-.brand-logo {
-  height: 50px;
-  width: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-  margin-top: 18px;
-}
-
-nav > img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-nav {
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  background: #06069d;
-  padding: 32px 12px;
-  position: sticky;
-  margin-bottom: 40px;
-}
-.nav-links > a {
-  color: white;
-  padding: 0 20px;
-  text-decoration: none;
-}
-
-.outer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.login-txt h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
-}
-.container {
-  height: auto;
-  width: 28rem;
-  border: 1px solid gray;
-  padding: 15px 43px 43px 43px;
-  border-radius: 45px 0 45px;
-}
-
-.forgot-pass {
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
-}
-.forgot-pass-checkbox {
-}
-.log-btn {
-  display: flex;
-  justify-content: center;
-}
-.login-btn {
-  /* width: 20px; */
-  padding: 5px;
-  width: 171px;
-  background: #06069d;
-  color: white;
-  border: none;
-  border-radius: 20px 0 20px;
-}
-
-@media (max-width: 558px) {
-  .login-txt h1 {
-    text-align: left;
-  }
+body{
+  background-color: white;
 }
