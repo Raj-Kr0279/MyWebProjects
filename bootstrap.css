@@ -20,7 +20,7 @@ html{
     color: black;
 }
 .main{
-    background: url("./Web_Development/domenico.jpg");
+    background: url("https://source.unsplash.com/1600x900/?beach");
     background-position: center;
     background-size: cover;
     height: 50vh;
