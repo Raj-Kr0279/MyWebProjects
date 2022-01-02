@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html{
   font-family: Arial, Helvetica, sans-serif;
   
@@ -10,18 +15,20 @@ li,ol,li,a{
 
 body{
   background-color: white;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-.nav{
-  border: 1px solid;
-background: blue;
+.navv{
+background: #140c6f;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 8px;
+padding: 4px 8px;
+padding-left: 1.5rem;
 }
+.navv a{
+  color: white;
+  padding: 0rem 1rem;
+}
+
 .logo{
   border-radius: 50%;
   width: 50px;
@@ -29,7 +36,9 @@ padding: 8px;
 }
 .login-text{
   margin-top: 10px;
-  border: 1px solid black;
+  padding: 0 0 0 15%;
+  font-size: 1.4rem;
+  color: #a7a4c9;
 }
 .login{
   margin-top: 10px;
@@ -42,35 +51,45 @@ padding: 8px;
 justify-content: center;
 margin-bottom: 36px;
 }
+.ham{
+  
+}
 .form-box{
   border: 1px solid;
-padding: 1rem 4rem;
-color: blue;
+padding: 2rem 4rem;
+color: #140c6f;
 border-radius: 15% 0;
+margin-top: 2rem;
+/* max-width: 100%; */
 }
 .form-box input[type="text"], .form-box input[type="password"]{
   display: block;
   width: 100%;
   margin: 0.5rem 0;
   padding: 7px;
+  margin-top: 0;
 }
 
 .forgot{
-  font-size: 0.7rem;
+  font-size: 0.44rem;
 }
 .user-help{
   display: flex;
   justify-content: space-between;
 }
-.log-btn{
+input[type="checkbox"]{
+  margin-right: 2%;
+}
+.log-bttn{
   display: flex;
   justify-content: center;
 }
-.btn{
-  background: blue;
+.bttn{
+  background: #140c6f;
 color: white;
 padding: 0.6rem 6rem;
-margin-top: 2%;
+margin-top: 10%;
 border-radius: 22px 0px;
 border: none;
+text-transform: uppercase;
 }
