@@ -40,19 +40,31 @@
 	align-items: center;
     flex-grow: 0;
 }
+.nav-link{
+	transition: all 0.5s ease-in-out;
+border-radius: 20px;
+margin: 0.2rem auto;
+padding: 0.5rem 1rem !important;
+}
+.nav-link:hover {
+	background: #1a1212;
+	color: white !important;
+}
 
 
 /* footer */
 .footer {
 	background: #1e1d1d;
 	color: white;
-	padding: 2% 0%;
+	padding: 0.5rem 2rem;
+	padding-bottom: 0;
     margin-top: 20px;
+	text-align: center;
 }
 
 .ftr {
 	text-align: center;
-	padding: 2% 0%;
+	padding: 2rem 2rem;
 }
 .ftr h3 {
 	margin-bottom: 1.5rem;
@@ -80,5 +92,19 @@
 }
 .fa-twitter:hover{
     color: #00acee;
+}
+
+hr:not([size]) {
+	height: 1px;
+	width: 95%;
+	margin-left: 20px 0 20px 0;
+	margin-top: 11px;
+	margin-bottom: 9px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #5b5959 !important;
+}
+.copyrightCont{
+	padding-bottom: 10px;
 }
 
