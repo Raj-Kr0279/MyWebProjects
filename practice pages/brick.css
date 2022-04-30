@@ -1,110 +1,144 @@
 .stick {
-	position: fixed;
-	top: 0;
-	z-index: 1020;
-    background: #f000 !important;
-    transition: all 0.7s;
-    
-
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  background: #f000 !important;
+  transition: all 0.7s;
 }
 
-.scrolled{
-    background: white !important;
-    position: fixed;
-    box-shadow: 2px 3px 5px grey;
-    top: 0;
-    z-index: 1020;
-    transition: all 0.7s;
+.scrolled {
+  background: white !important;
+  position: fixed;
+  box-shadow: 2px 3px 5px grey;
+  top: 0;
+  z-index: 1020;
+  transition: all 0.7s;
 }
 
-
-#navCont{
-    display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around !important;
+#navCont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around !important;
 }
 
-.navbar{
-    padding: 0 !important;
-    width: 100%;
-    
+.navbar {
+  padding: 0;
+  width: 100%;
+}
+.navbar-brand {
+  background: url("imagess/ds.png")
+    no-repeat center center/cover;
+  background-size: cover;
+  width: 200px;
+  height: 65px;
+  background-size: 100%;
 }
 
-.cards{
-    margin-top: 50px;
+.cards {
+  margin-top: 50px;
 }
 
 .navbar-collapse {
-	flex-basis: 100%;
-	align-items: center;
-    flex-grow: 0;
+  flex-basis: 100%;
+  align-items: center;
+  flex-grow: 0;
 }
-.nav-link{
-	transition: all 0.5s ease-in-out;
-border-radius: 20px;
-margin: 0.2rem auto;
-padding: 0.5rem 1rem !important;
+.nav-link {
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+  margin: 0.2rem auto;
+  padding: 0.5rem 1rem !important;
 }
 .nav-link:hover {
-	background: #1a1212;
-	color: white !important;
+  background: #1a1212;
+  color: white !important;
 }
-
 
 /* footer */
 .footer {
-	background: #1e1d1d;
-	color: white;
-	padding: 0.5rem 2rem;
-	padding-bottom: 0;
-    margin-top: 20px;
-	text-align: center;
+  background: #1e1d1d;
+  color: white;
+  padding: 0.5rem 2rem;
+  padding-bottom: 0;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .ftr {
-	text-align: center;
-	padding: 2rem 2rem;
+  text-align: center;
+  padding: 2rem 2rem;
 }
 .ftr h3 {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .soc-icons-cont {
-	text-align: center;
+  text-align: center;
 }
 .fab {
-	font-weight: 400;
-	padding: 0 6px;
-	font-size: 2rem;
-    transition: all 0.5s;
+  font-weight: 400;
+  padding: 0 6px;
+  font-size: 2rem;
+  transition: all 0.5s;
 }
 
-.fa-facebook:hover{
-    color: #385499;
+.fa-facebook:hover {
+  color: #385499;
 }
 
 .fa-instagram:hover {
-	color: transparent;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-	background-clip: text;
-	-webkit-background-clip: text;
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.fa-twitter:hover{
-    color: #00acee;
+.fa-twitter:hover {
+  color: #00acee;
 }
 
 hr:not([size]) {
-	height: 1px;
-	width: 95%;
-	margin-left: 20px 0 20px 0;
-	margin-top: 11px;
-	margin-bottom: 9px;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #5b5959 !important;
+  height: 1px;
+  width: 95%;
+  margin-left: 20px 0 20px 0;
+  margin-top: 11px;
+  margin-bottom: 9px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #5b5959 !important;
 }
-.copyrightCont{
-	padding-bottom: 10px;
+.copyrightCont {
+  padding-bottom: 10px;
 }
 
+/* media queries */
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    background: white !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .navbar-brand {
+    margin-right: 5rem;
+  }
+}
