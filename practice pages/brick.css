@@ -27,12 +27,54 @@
   width: 100%;
 }
 .navbar-brand {
-  background: url("imagess/ds.png")
-    no-repeat center center/cover;
+  background: rgb(0, 0, 0, 0.18) url("imagess/ds.png") no-repeat center
+    center/cover;
   background-size: cover;
-  width: 200px;
+  width: 65px;
   height: 65px;
   background-size: 100%;
+  border-radius: 50%;
+}
+
+.main-heading {
+  position: absolute;
+  z-index: 999;
+  top: 15%;
+  text-align: center;
+  width: 83%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.main-heading h1 {
+  font-size: clamp(3rem, 15vw, 17rem);
+  font-weight: 900;
+  margin-top: -1rem;
+  text-transform: uppercase;
+}
+.main-heading h3 {
+  font-size: 6vw;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.main-heading p{
+  font-size: 3.5vw;
+  margin-top:1rem;
+}
+.exp {
+  background: #fffefe4f;
+  padding: 0.5rem 2rem;
+  font-size: clamp(1rem, 4vw + 0.1rem, 1.4rem);
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  transition: background 0.7s;
+}
+.exp:hover {
+  background: red;
 }
 
 .cards {
@@ -136,9 +178,38 @@ hr:not([size]) {
   .navbar-toggler {
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 18px;
+  }
+  #navCont {
+    justify-content: space-between !important;
   }
   .navbar-brand {
     margin-right: 5rem;
+    height: 50px;
+    width: 50px;
+  }
+
+  .navbar-toggler{
+    top: 11px;
+  }
+
+  .main-heading{
+    top: 0;
+  }
+  .main-heading p {
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-bottom: 0.5rem;
+  }
+  .exp {
+    font-size: 14px;
+padding: 3px 12px;
+margin-top: -2px;
+  }
+  #carouselExampleControls {
+    margin-top: 3.8rem;
+  }
+  .cards {
+    margin-top: 1rem;
   }
 }
