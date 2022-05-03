@@ -48,13 +48,20 @@
 }
 
 .main-heading h1 {
+  background: url('https://images.unsplash.com/photo-1522386936864-c81ca9c02464?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGxlYXZlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+  background-clip: text;
+  background-size: auto;
+  background-position: center;
   font-size: clamp(3rem, 15vw, 17rem);
   font-weight: 900;
   margin-top: -1rem;
   text-transform: uppercase;
+  color: transparent;
 }
+
 .main-heading h3 {
   font-size: 6vw;
+  
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -95,6 +102,10 @@
 .nav-link:hover {
   background: #1a1212;
   color: white !important;
+}
+
+.carousel-item img{
+  filter: brightness(29%);
 }
 
 /* footer */
