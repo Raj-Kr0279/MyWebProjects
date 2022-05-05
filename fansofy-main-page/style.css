@@ -4,7 +4,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
     padding:0;
 }
 *{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: lato;
+color: #6C6C6C;
 }
 html,body {
     margin:0;
@@ -55,8 +56,8 @@ height: 74px;
     align-items: center;
 }
 .img-cont{
-    width: 26%;
-    min-width: 300px;
+    
+    
 }
 .img-cont img{
     width: 147px;
@@ -72,7 +73,7 @@ align-items: center;
 flex: 3 1;
 padding: 0 26px;
 border-radius: 25px;
-background: #00000029;
+background: #2d2b2b0f;
 box-shadow: 0px 3px 6px #00000029;
 min-width: 400px;
 
@@ -81,10 +82,17 @@ aside{
     min-width: 300px;
 
 }
+.menu-sel span {
+	color: #E464A0;
+    
+}
+.menu-sel{
+    border: 1px solid #6C6C6C;
+    border-radius: 15px;
+}
 aside ul li{
-    padding: 5px 0 ;
-    line-height: 1em;
-    padding: 6px 19px;
+    line-height: 1.2em;
+padding: 6px 19px;
     
 }
 aside i, aside svg{
@@ -92,12 +100,13 @@ aside i, aside svg{
 }
 aside a{
     color: #6C6C6C;
+font-weight: 800;
 }
 aside svg{
     width: 12px;
 }
 .fa-caret-down{
-    margin-left: 20px;
+    float: right;
 }
 .fa{
     margin-right: 5px;
@@ -105,36 +114,82 @@ aside svg{
 
 
 .main{
-width: 100%;
 display: flex;
 justify-content: center;
-flex: 3 1;
+flex: 5 1;
+flex-direction: column;
 }
 .main-cont{
     width: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 
 .row{
     gap: 1rem;
+    --bs-gutter-x: 0 !important;
+--bs-gutter-y: 0;
 }
+
 .items{
     border-radius: 20px;
-background: #8080801f;
-padding: 0.8rem;
-height: 110px;
-text-align: left;
-position: relative;
-min-width: 166px;
+    background: #FFFFFF66;
+    padding: 16px 14px;
+    height: 100px;
+    text-align: left;
+    position: relative;
+    min-width: 163px;
+    font-size: 1rem;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #6C6C6C47;
 }
 .items span {
-	text-align: center !important;
 	display: block;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 .viewm {
 	position: absolute;
 right: 18px;
 font-size: 0.8rem !important;
 bottom: 8px;
-color: blue;
+color: #6C6C6C;
 }
+
+.canvasjs-chart-canvas{
+    height: 308px;
+width: 90%;
+}
+.canvasjs-chart-container{
+    display: flex;
+    justify-content: center;
+}
+.graph-main-cont{
+    border: 1px solid #dbd5d5;
+padding: 2rem;
+border-radius: 20px;
+margin-top: 1rem;
+}
+.sum {
+	padding: 1.8rem 1rem;
+	background-color: #FFFFFF66;
+	border-radius: 15px;
+	text-align: center;
+	width: 22%; 
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #6C6C6C47;
+}
+.canvasjs-chart-credit{
+    display: none;
+}
+.sum h2 {
+	font-size: 1.3rem;
+}
+.sum p {
+	font-size: 0.7rem;
+}
+
+

@@ -8,15 +8,17 @@
     <script src="https://kit.fontawesome.com/9526a052de.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="js/Chart.min.js"></script>  -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="nav-cont">
-            <div class="img-cont"><img src="images/logo.png" alt="">
+        <div class="navContainer container-fluid">
+        <div class="row nav-cont" style="flex-wrap: nowrap;">
+            <div class="col-3 img-cont"><img src="images/logo.png" alt="">
             </div>
             
-              <div class="top-bar"> 
+              <div class=" col-9 top-bar"> 
                 <div class="left-icon"> <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
                <div class="right-icon"> <i class="fa fa-home" aria-hidden="true"></i>
@@ -25,11 +27,13 @@
                 
             </div>
         </div>
+    </div>
     </nav>
     <div class="row">
     <aside class = "col">
+        <div style="/*! display: flex; *//*! padding-left: 14px; */margin-left: 9px;">
         <ul>
-            <li>
+            <li  class = "menu-sel">
                 <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 60.65 28.65 32 64 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96zM64 416H224V160H64V416zM448 160H288V416H448V160z"/></svg><span>Dashboard</span>
                 </a>
@@ -114,61 +118,119 @@
                     <i class="fa fa-folder-magnifying-glass"></i><span>Referrals</span>
                 </a>
             </li>
-            <li>
-                <a href="">
-                    <i class="fa fa-folder-magnifying-glass"></i><span>Referrals</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa fa-folder-magnifying-glass"></i><span>Referrals</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa fa-folder-magnifying-glass"></i><span>Referrals</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <i class="fa fa-folder-magnifying-glass"></i><span>Referrals</span>
-                </a>
-            </li>
+            
 
         </ul>
-
+    </div>
     </aside>
     
 <main class="col main">
     <div class="main-cont">
-        <i class="fa fa-money-bill"></i><span style="font-size: 1rem;font-weight: 900;">Net Earnings (Admin)</span>
-    <div class="row" style="justify-content: space-between;width: 100%;">
-        <div class="col items">
-            <i class="fa fa-users"></i><span>Subscriptions</span>
-            <p>$450.06</p>
-            <p class="viewm">View More</p>
-        </div>     
-        <div class="col items">
-            <i class="fa fa-coins"></i><span>Extra Earning</span>
-            <p>$140.06</p>
-            <p class="viewm">View More</p>
-        </div>
-        <div class="col items">
-            <i class="fa fa-user"></i><span>Users</span>
-            <p>870</p>
-            <p class="viewm">View More</p>  
-        </div>
-        <div class="col items">
-            <i class="fa fa-user"></i><span>Creators</span>
-            <p>350</p>
-            <p class="viewm">View More</p>
-        </div>
-    </div>
+        <div style = "font-size: 1rem;font-weight: 900;display: block;/*! flex: ; */color: #6C6C6C;">
+            <span><i class="fa fa-money-bill" aria-hidden="true"></i>Net Earnings (Admin)</span></div>
+        <div class="container-fluid" style="justify-content: center;display: flex;justify-content: center;"><div class="row" style="/*! justify-content: end; */width: 100%;">
+            <div class="col items">
+                <span style="font-size: 1.15rem;"> <i class="fa fa-users" aria-hidden="true"></i>Subscriptions</span>
+                <p>$450.06</p>
+                <p class="viewm">View More</p>
+            </div>     
+            <div class="col items">
+                <span> <i class="fa fa-coins" aria-hidden="true"></i>Extra Earning</span>
+                <p>$140.06</p>
+                <a class="viewm">View More</a>
+            </div>
+            <div class="col items">
+                <span> <i class="fa fa-user" aria-hidden="true"></i>Users</span>
+                <p>870</p>
+                <p class="viewm">View More</p>  
+            </div>
+            <div class="col items">
+                <span> <i class="fa fa-user" aria-hidden="true"></i>Creators</span>
+                <p>350</p>
+                <p class="viewm">View More</p>
+            </div>
+        </div></div>
 </div>
+
+
+
+
+
+<div class="graph-main-cont">
+
+    <div><span style="font-size: 1.3rem;"> Statistic of the Month</span></div>
+    
+    
+    
+    <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    
+    <div class="summary" style="width: 100%;height: 100px;display: flex;justify-content: space-around;align-items: center;">
+        <div class="sum" style="/*! width: 80px; *//*! height: 80px; *//*! border: 1px solid red; */"><h2>$12</h2>
+        <p>REVENUE TODAY</p></div>
+        <div class="sum"><h2>$42</h2>
+        <p>REVENUE THIS WEEK</p></div>
+        <div class="sum"><h2>$200</h2>
+        <p>REVENUE THIS MONTH</p>
+      </div>
+</div>
+</div>
+
+
+
+
+
+
+
 
     </main>
 </div>
+<script>
+    window.onload = function () {
     
+    var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,  
+        title:{
+            text: "Company Revenue by Year"
+        },
+        axisY: {
+            title: "Revenue in USD",
+            valueFormatString: "#0,,.",
+            suffix: "mn",
+            prefix: "$"
+        },
+        data: [{
+            type: "splineArea",
+            color: "rgba(54,158,173,.7)",
+            markerSize: 5,
+            xValueFormatString: "YYYY",
+            yValueFormatString: "$#,##0.##",
+            dataPoints: [
+                { x: new Date(2000, 0), y: 3289000 },
+                { x: new Date(2001, 0), y: 3830000 },
+                { x: new Date(2002, 0), y: 2009000 },
+                { x: new Date(2003, 0), y: 2840000 },
+                { x: new Date(2004, 0), y: 2396000 },
+                { x: new Date(2005, 0), y: 1613000 },
+                { x: new Date(2006, 0), y: 2821000 },
+                { x: new Date(2007, 0), y: 2000000 },
+                { x: new Date(2008, 0), y: 1397000 },
+                { x: new Date(2009, 0), y: 2506000 },
+                { x: new Date(2010, 0), y: 2798000 },
+                { x: new Date(2011, 0), y: 3386000 },
+                { x: new Date(2012, 0), y: 6704000},
+                { x: new Date(2013, 0), y: 6026000 },
+                { x: new Date(2014, 0), y: 2394000 },
+                { x: new Date(2015, 0), y: 1872000 },
+                { x: new Date(2016, 0), y: 2140000 }
+            ]
+        }]
+        });
+    chart.render();
     
+    }
+    chart.width = 800;
+    chart.height = 600;
+    </script> 
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
