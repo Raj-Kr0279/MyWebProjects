@@ -7,9 +7,9 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
     font-family: lato;
 color: #6C6C6C;
 }
-html,body {
-    margin:0;
-    padding:0;
+body {
+    margin-inline: 1rem;
+    padding:0
 }
 table {
     border-collapse:collapse;
@@ -78,10 +78,20 @@ box-shadow: 0px 3px 6px #00000029;
 min-width: 400px;
 
 }
+.main-row{
+    flex-wrap: nowrap !important;
+}
 aside{
     min-width: 300px;
 
 }
+.accordion-item{
+    border: none;
+}
+.accordion-button::after, .accordion-button:not(.collapsed)::after{
+    background-image: url("https://w7.pngwing.com/pngs/781/795/png-transparent-font-awesome-arrow-computer-icons-caret-font-arrow-angle-rectangle-triangle.png");
+}
+
 .menu-sel span {
 	color: #E464A0;
     
@@ -111,13 +121,27 @@ aside svg{
 .fa{
     margin-right: 5px;
 }
-
-
+.accordion-collapse {
+	border: 1px solid #0000001c;
+	background: #0000001c;
+	width: 80%;
+	margin: auto;
+	border-radius: 20px !important;
+	margin-top: 6px;
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: none !important;
+	outline: 0;
+	box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+	color: #0c63e4;
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
 .main{
-display: flex;
-justify-content: center;
 flex: 5 1;
-flex-direction: column;
 }
 .main-cont{
     width: 100%; 
@@ -191,5 +215,3 @@ margin-top: 1rem;
 .sum p {
 	font-size: 0.7rem;
 }
-
-
