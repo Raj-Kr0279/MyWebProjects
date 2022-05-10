@@ -46,7 +46,7 @@
     
                                         <div class="accordion" id="accordionExample" style="/*! border: 1px solid blue; */">
     
-                <div class="accordion-item"><ul> 
+                <div class="accordion-item"><ul style="margin: 0px;"> 
                     <li style="/*! color: red !important; */">
                         <a href="#">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 60.65 28.65 32 64 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96zM64 416H224V160H64V416zM448 160H288V416H448V160z"></path></svg><span>Dashboard</span>
@@ -57,12 +57,12 @@
                     
                         
                            
-                            <li> <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#set-targ" aria-expanded="true" aria-controls="collapseOne">
+                            <li> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#set-targ" aria-expanded="false" aria-controls="collapseOne">
                         <a href="#" style="color: red;">
-                            <i class="fa fa-gear" aria-hidden="true"></i><span style="/*! color: red; */">Settings</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <i aria-hidden="true" style="margin-left: -10px !important;" class="fa fa-gear nested-i"></i><span style="/*! color: red; */">Settings</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button>
                         <ul>
-                        <div id="set-targ" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                        <div id="set-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
     
                             
@@ -97,7 +97,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manPost-targ" aria-expanded="false" aria-controls="manPost-targ">
                     
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z"></path></svg><span>Manage Posts</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <svg class="nested-i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z"></path></svg><span>Manage Posts</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button><ul>
                         <div id="manPost-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
@@ -117,7 +117,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manCoin-targ" aria-expanded="false" aria-controls="manCoin-targ">
                     
                         <a href="#">
-                            <i class="fa fa-coins" aria-hidden="true"></i><span>Manage Coin Feature</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <i aria-hidden="true" class="fa fa-coins nested-i"></i><span>Manage Coin Feature</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button><ul>
                         <div id="manCoin-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
@@ -140,7 +140,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#user-targ" aria-expanded="false" aria-controls="user-targ">
                     
                         <a href="#">
-                            <i class="fa fa-users" aria-hidden="true"></i><span>Users</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <i aria-hidden="true" class="fa fa-users nested-i"></i><span>Users</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a>
                     </button><ul>
                         <div id="user-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
@@ -178,7 +178,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payMeth-targ" aria-expanded="false" aria-controls="payMeth-targ">
                    
                         <a href="#">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i><span>Payments Methods</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <i aria-hidden="true" class="fa fa-credit-card nested-i"></i><span>Payments Methods</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button><ul>
                         <div id="payMeth-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
@@ -207,7 +207,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#manPay-targ" aria-expanded="false" aria-controls="manPay-targ">
                     
                         <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 176h370.8l-57.38 57.38c-12.5 12.5-12.5 32.75 0 45.25C351.6 284.9 359.8 288 368 288s16.38-3.125 22.62-9.375l112-112c12.5-12.5 12.5-32.75 0-45.25l-112-112c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L402.8 112H32c-17.69 0-32 14.31-32 32S14.31 176 32 176zM480 336H109.3l57.38-57.38c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-112 112c-12.5 12.5-12.5 32.75 0 45.25l112 112C127.6 508.9 135.8 512 144 512s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L109.3 400H480c17.69 0 32-14.31 32-32S497.7 336 480 336z"></path></svg><span>Manage Payments</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <svg class="nested-i" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M32 176h370.8l-57.38 57.38c-12.5 12.5-12.5 32.75 0 45.25C351.6 284.9 359.8 288 368 288s16.38-3.125 22.62-9.375l112-112c12.5-12.5 12.5-32.75 0-45.25l-112-112c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L402.8 112H32c-17.69 0-32 14.31-32 32S14.31 176 32 176zM480 336H109.3l57.38-57.38c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-112 112c-12.5 12.5-12.5 32.75 0 45.25l112 112C127.6 508.9 135.8 512 144 512s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L109.3 400H480c17.69 0 32-14.31 32-32S497.7 336 480 336z"></path></svg><span>Manage Payments</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button><ul>
                         <div id="manPay-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
@@ -228,7 +228,7 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#advert-targ" aria-expanded="false" aria-controls="advert-targ">
                     
                         <a href="#">
-                            <i class="fa fa-globe" aria-hidden="true"></i><span>Advertisement</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
+                            <i aria-hidden="true" class="fa fa-globe nested-i"></i><span>Advertisement</span><i class="fa fa-caret-down" aria-hidden="true" style="display: none;"></i>
                         </a></button><ul>
                         <div id="advert-targ" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
                             <div class="accordion-body">
@@ -244,7 +244,7 @@
                         </div>
                     </ul>
                     
-                    <li>
+                    </li><li>
                         <a href="#">
                              <i class="fa fa-globe" aria-hidden="true"></i><span>Giphy API</span>
                         </a>
@@ -317,18 +317,108 @@
 
     <div class = "col-5"></div></div>
 </div>
-<div class="container bot-card-cont">
-    <div class="row">
-        <div class="col-4 bottom-cards"></div>
-        <div class="col-4 bottom-cards"></div>
-        <div class="col-4 bottom-cards"></div>
-    </div>
-</div>
-<div class="container activity-cont">
-    <div class="row">
-        <div class="col-4 bottom-cards"></div>
-    </div>
-</div>
+<!-- bottom-cards  -->
+
+<div class = "main-bottom-containers">
+    <div class = "cards">  <div class = "card-head-text">
+      <i class="fa fa-users"></i><h1>New Registered Users</h1></div><div class="notifications">
+          
+            
+              
+              
+                <div class = "user-details-container">
+                  <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true" style="/*! font-size: 7px; */"></i><span>About an hour ago</span></div></div>
+                <div class="user-details">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                  <div class="user-details">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                    <div class="user-details">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                      <div class="user-details">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                        <div class="user-details">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                          
+                
+              </div>
+            </div>
+      </div>
+      <div class = "cards">  <div class = "card-head-text">
+        <i class="fa fa-users"></i><h1>Latest Subscription</h1></div><div class="notifications">
+            
+              
+                
+                
+                  <div class = "user-details-container">
+                    <div class="user-details">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true" style="/*! font-size: 7px; */"></i><span>About an hour ago</span></div></div>
+                  <div class="user-details">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                    <div class="user-details">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                      <div class="user-details">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                        <div class="user-details">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                          <div class="user-details">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                            
+                  
+                </div>
+              </div>
+        </div>
+        <div class = "cards">  <div class = "card-head-text">
+          <i class="fa fa-users"></i><h1>Latest Transactions</h1></div><div class="notifications">
+              
+                
+                  
+                  
+                    <div class = "user-details-container">
+                      <div class="user-details">
+                          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true" style="/*! font-size: 7px; */"></i><span>About an hour ago</span></div></div>
+                    <div class="user-details">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                      <div class="user-details">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                        <div class="user-details">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                          <div class="user-details">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                            <div class="user-details">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                              
+                    
+                  </div>
+                </div>
+          </div>
+          <div class = "cards">  <div class = "card-head-text">
+            <i class="fa fa-users"></i><h1>Activity</h1></div>
+            <div class="notifications">
+                
+                  
+                    
+                    
+                      <div class = "user-details-container">
+                        <div class="user-details">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true" style="/*! font-size: 7px; */"></i><span>About an hour ago</span></div></div>
+                      <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                        <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                          <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                            <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                              <div class="user-details">
+                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHw%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" alt=""> <div  class = "noti-details"><p>Alicia Keys</p> <span>@some</span><i class="fa fa-circle" aria-hidden="true"></i><span>About an hour ago</span></div></div>
+                                
+                      
+                    </div>
+                  </div>
+            </div>
+                    </div>
+  
 
 
 
