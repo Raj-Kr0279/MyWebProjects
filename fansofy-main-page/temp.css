@@ -1,4 +1,37 @@
+
+ul, li {margin-left: 0; padding-left: 0;}
+.nested {
+	background: #0000002e;
+	border-radius: 29px;
+	border: 1px solid #0000001a;
+}
 aside li {
 	list-style: none;
+	
+	padding: 10px 20px;
 }
-ul, li {margin-left: 0; padding-left: 0;}
+
+.fa.fa-angle-down {
+	
+	position: absolute;
+	right: 10px;
+  }
+  aside ul li a i, aside ul li i {
+	margin-right: 5px;
+}
+aside a:hover {
+	color: #E464A0;
+}
+.red{
+	color: none;
+}
+a {
+	color: #0000002e;
+	text-decoration: underline;
+}
+
+  @media only screen and (max-width: 800px){
+	aside ul li a span, aside ul li span, .fa-angle-down{
+	  display: none;
+	}
+  } 
