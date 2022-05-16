@@ -107,7 +107,7 @@ opacity: 0.6;
                 /* aside start  */
 
                 aside{
-                    width: 274px !important;
+                    width: clamp(274px, 30%, 300px) !important;
                 }
                     aside ul{
                     position: relative;
@@ -116,10 +116,7 @@ opacity: 0.6;
                     margin-left: 0;
                     color: #6C6C6C; 
                     padding-left: 0;}
-                .nested {
-                    
                 
-                }
                 aside li {
                     list-style: none;
                     
@@ -215,6 +212,8 @@ margin-top: 1rem;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+    box-shadow: none;
+border: none;
 }
 .canvasjs-chart-credit{
     display: none;
