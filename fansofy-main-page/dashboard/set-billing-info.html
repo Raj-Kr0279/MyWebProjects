@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="set-limits.css">
+<link rel="stylesheet" href="set-billing-info.css">
 </head>
 <body>
     <nav>
@@ -117,104 +117,48 @@
         <li><i aria-hidden="true" class="fa fa-gear"></i><span>Referrals</span></li>
                                               
     </ul>
-</aside>    
+</aside> 
+
+
 <main>
-    <h1 id = "top-heading">Limits</h1>
+    <h1>Billing Information</h1>
     <div class="form-container">
-    <form>
         
-        <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Upload File Size Limit</label>
-            
-            <div class = select-rows><select name="language-picker-select" id="file-size-select">
-                <option value="deutsch" lang="de">Deutsch</option>
-                <option value="english" selected="" lang="en">5 MB</option>
-                <option value="francais" lang="fr">Français</option>
-                <option value="italiano" lang="it">Italiano</option>
-        
-        
-               
-              </select>
-              <span>IMPORTANT: Please pay attention to your server's default maximum file upload size.</span>
-              </div>
-            </div>
-          
-        
-        
-            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Post Length</label>
-                <div class = select-rows>
-            <select name="language-picker-select" id="post-length-select">
-                <option value="deutsch" lang="de">Deutsch</option>
-                <option value="english" selected="" lang="en">500 Characters</option>
-                <option value="francais" lang="fr">Français</option>
-                <option value="italiano" lang="it">Italiano</option>
-        
-        
-               
-              </select>
-              <span>It is the maximum character value that can be written to a post.</span>
-                </div>
-            </div>
-          
-         
-            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Number of Post Show</label>
-                <div class = select-rows>
-                <select name="language-picker-select" id="post-count-select">
-                    <option value="deutsch" lang="de">Deutsch</option>
-                    <option value="english" selected="" lang="en">10</option>
-                    <option value="francais" lang="fr">Français</option>
-                    <option value="italiano" lang="it">Italiano</option>
-            
-            
-                   
-                  </select>
-                  <span>It is also the number of posts that will be displayed when the page is scrolled.</span>
-                </div>
-                </div>
-           
-          
-         
-                <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Show number of Pagination</label>
-                    <div class = select-rows>
-                    <select name="language-picker-select" id="pagination-select">
-                        <option value="deutsch" lang="de">Deutsch</option>
-                        <option value="english" selected="" lang="en">10</option>
-                        <option value="francais" lang="fr">Français</option>
-                        <option value="italiano" lang="it">Italiano</option>
-                
-                
-                       
-                      </select>
-                      <span>It is also the number of posts that will be displayed when the page is scrolled.</span>
-                    </div>
-                    </div>
-                    <div class="form-row"><label for="" class="col-sm-2 col-form-label">Allowed file extension</label>
-                        <div class="select-rows" style="display: flex;flex-direction: column;gap: 5px;">
-                            <span style="font-size: 0.6rem;"> mp4,MP4,mp3,MP3,mpg,mov,m4v,avi,flv,mpeg,MPEG,webm,mkv,MKV,gif,GIF,jpg,jpeg,JPEG,JPG,PNG,png</span>
-                           <span>Separated with comma,</span>
-                        </div>
-                    </div>
-            
-          
-        <div class = "save-btn">
-            <button>
-                Save
-            </button></div>
-      </form>
-    </div>
+        <form>
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Company</label><input type="text"></div>
+
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Country</label><input type="text"></div>
+
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">City</label><input type="text"></div>
+
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Business Address</label><input type="text-area" style="height: 80px;width: 340px;"></div>
+
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Post Code</label><input type="text"></div>
+
+            <div class = "form-row"><label for="inputEmail3" class="col-sm-2 col-form-label">Vat</label><input type="text"></div>
+            <div class = "save-btn">
+                <button>
+                    Save
+                </button></div>
+        </form>
 </main>
 
 
-
-<script>
+    <script>
     
        
-    document.querySelectorAll('li').forEach(item => {
-        
-item.addEventListener('click', event => {
-event.stopPropagation();
-item.classList.toggle("red");
+        document.querySelectorAll('li').forEach(item => {
+            
+  item.addEventListener('click', event => {
+    event.stopPropagation();
+    item.classList.toggle("red");
+  })
 })
-})
+  </script>
+  <script>
+    const aside = document.querySelector('aside');
+    const bar = document.querySelector(".fa-bars")
+    bar.addEventListener('click', function(){event.stopPropagation(); aside.classList.toggle('d-none')}) 
 </script>
 </body>
 </html>
