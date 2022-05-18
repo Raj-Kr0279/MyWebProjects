@@ -129,11 +129,7 @@ main{
                     padding: 10px 20px;
                 }
                 
-                .fa.fa-angle-down {
-                    
-                    position: absolute;
-                    right: 10px;
-                  }
+                
                   aside ul li a i, aside ul li i {
                     margin-right: 5px;
                 }
@@ -147,6 +143,24 @@ main{
                     color: #6C6C6C;
                     text-decoration: none;
                 }
+
+                aside li > a {
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                }
+                
+                .fa.fa-angle-down {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 3px;
+                }
+                aside li a :hover {
+                    color: #E464A0;
+                }
+
+
+
                 
 
                 /* main start  */
