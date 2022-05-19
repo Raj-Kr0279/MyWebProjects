@@ -1,0 +1,137 @@
+#svg-head {
+	font-size: 2rem;
+	margin-left: 4rem;
+	margin-top: 4rem;
+	font-weight: 900;
+    margin-bottom: 0;
+}
+
+.btn.btn-primary.create {
+	margin-left: 4rem;
+	margin-top: 2rem;
+	border-radius: 15px;
+	padding: 0.4rem 1.5rem;
+}
+
+.create {
+	background: #E464A0;
+	border-radius: 20px;
+	padding: 5px 2rem;
+    color: white;
+    font-size: 1rem;
+margin-left: 4rem;
+border: none;
+}
+.fa-plus{
+    color: black;
+background: white;
+padding: 0.3rem;
+border-radius: 50%;
+margin-right: 1rem;
+}
+
+
+.fa-language {
+	font-size: 21px;
+}
+.serial {
+	width: 10px;
+	height: 20px;
+	background: #E464A0;
+	color: white;
+	padding: 17px 9px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	position: relative;
+	top: -13%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 2rem 4rem;
+	padding: 5rem;
+}
+.grid-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	background: white;
+	padding: 0 0.5rem;
+	border-radius: 10px;
+}
+
+.form-switch {
+	padding: 0 !important;
+}
+.form-check .form-check-input {
+	float: left;
+	margin-left: 0 !important;
+}
+
+.serial span {
+	color: white;
+	font-size: 0.67rem;
+	font-weight: 900;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .form-check-input:checked {
+    background-color: #e464a0;
+    border-color: #e464a0;
+  }
+  .form-check.form-switch span {
+      font-size: 1.2rem;
+      font-weight: 900;
+  }
+  .form-switch .form-check-input {
+      width: 25px !important;
+      margin-left: -2.5em;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+      background-position: left center;
+      border-radius: 2em;
+      transition: background-position .15s ease-in-out;
+      margin-top: 7px !important;
+  }
+  
+  .form-check-input:focus {
+      border: 1px solid #00000042;
+      outline: none;
+      box-shadow: none;
+  }
+  
+  .form-switch .form-check-input:focus {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  }
+  
+  
+  select {
+      word-wrap: normal;
+      background: #E464A0;
+      padding: 7px 38px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 94%;
+      background-position-y: 8px;
+      
+  }
+  
