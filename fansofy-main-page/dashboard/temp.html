@@ -1,96 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9526a052de.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="email-set.css">
+<link rel="stylesheet" href="storage.css">
 <style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 34px;
-  height: 24px;
-}
-
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 2px;
-  
-  background-color: white;
-  border: 1px solid black;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: white;
-  border: 2px solid black;
-  
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 40%;
-}
+    .hide{
+        opacity: 0;
+        white-space: nowrap;
+        display: inline-block;
+        transition: all 0.4s;
+    }
+    .width{
+        width: 50px;
+        transition: all 0.4s;
+    }
+    .flex{
+        display: flex;
+        transition: all 0.4s;
+        align-items: center;
+    }
 </style>
 </head>
 <body>
+    <nav>
+        <div class="navContainer container-fluid">
+        <div class="row nav-cont" style="flex-wrap: nowrap;">
+            <div class="col-3 img-cont"><img src="images/logo.png" alt="">
+            </div>
+            
+              <div class=" col-9 top-bar"> 
+                <div class="left-icon"> <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+               <div class="right-icon"> <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+    </nav>
 
-<h2>Toggle Switch</h2>
 
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
-</label>
 
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider"></span>
-</label><br><br>
+<aside class="aside">
+    <ul class="accordion" id="accordionExample">
+            <li class="" style="border: 1px solid #0000002e;border-radius: 34px;background: #0000000d;backdrop-filter: blur(0px);"><a class = "aside-links" href="dashboard.html"><i aria-hidden="true" class="fa fa-gear"></i><span class="menu-label">Dashboard</span></a></li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#Settings" role="button" aria-expanded="false" data-bs-target="#Settings"><i aria-hidden="true" class="fa fa-gear"></i><span>Settings</span><span   class="fa fa-angle-down collapsed" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="Settings" data-bs-parent="#accordionExample">
+                   <li><a href="#">General</a></li>
+                   <li><a href="#">Limits</a></li>
+                   <li><a href="#">Billing Information</a></li>
+                   <li><a href="#">2FA</a></li>
+                </ul>
+            </li>
+    
+            <li><a class = "aside-links" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></i><span>Email Setting</span></a></li>
+    
+            <li><a class = "aside-links" href="#"><i class="fa fa-video" aria-hidden="true"></i><span>Live Stream Settings</span></a></li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#man-posts" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Posts</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="man-posts" data-bs-parent="#accordionExample" style="">
+                    <li><a href="#">Post Report</a></li>
+                    <li><a href="#">Posts</a></li>
+                </ul>
+            </li>
+    
+            <li><a class = "aside-links" data-bs-toggle="collapse" href="#man-coin-feat" role="button" aria-expanded="false" ><i aria-hidden="true" class="fa fa-coins"></i><span>Manage Coin Feature</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="man-coin-feat" data-bs-parent="#accordionExample">
+                     <li><a href="#">Coin Package Settings</a></li>
+                </ul>
+            </li>
+    
+            <li><a class = "aside-links" href="#"><i class="fa fa-language" aria-hidden="true"></i><span>Languages</span></a></li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#users" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-users nested-i"></i><span>Users</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="users" data-bs-parent="#accordionExample">
+                    <li><a href="#">Manage Users</a></li>
+                    <li><a href="#">Creator Verification Request</a></li>
+                </ul>
+             </li>
+    
+            <li><a class = "aside-links" href="#"><i class="fa fa-file" aria-hidden="true"></i><span>Pages</span></a></li>
+    
+            <li> <a class = "aside-links"  data-bs-toggle="collapse" href="#page-role" role="button" aria-expanded="false"><i class="fa fa-file" aria-hidden="true"></i><span>Page Roles</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="page-role" data-bs-parent="#accordionExample" style="">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Verification</a></li>
+                    <li><a href="#">Grievance</a></li>
+                 </ul>
+            </li>
+    
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Stickers</span></a></li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#pay-meth" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-credit-card"><div></div></i><span>Payment Methods</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="pay-meth" data-bs-parent="#accordionExample">
+                    <li><a href="#">Payment Settings</a></li>
+                     <li><a href="#">Stripe</a></li>
+                     <li><a href="#">Coin Payment</a></li>
+                 </ul>
+            </li>
+    
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Social Logins</span></a></li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#manage-pay" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Payments</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="manage-pay" data-bs-parent="#accordionExample">
+                          <li><a href="#">Manage Withdrawals</a></li>
+                          <li><a href="#">Manage Subscription Payment</a></li>
+                </ul>
+            </li>
+    
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#advert" role="button" aria-expanded="false" data-bs-target="#advert" ><i aria-hidden="true" class="fa fa-globe"></i>
+                        <span>Advertisement</span>
+                        <span class="fa fa-angle-down" aria-hidden="true"></span>
+                    </a>
+                    <ul class="nested collapse" id="advert" data-bs-parent="#accordionExample">
+                                <li><a href="#">Create a Advertisement</a></li>
+                                 <li><a href="#">Manage Advertisement</a></li>
+                    </ul>
+            </li>
+    
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-globe"></i><span>Gify API</span></a></li>
+    
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Referrals</span></a></li>
+                                                  
+        </ul>
+    </aside>
 
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
 
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label>
-
-</body>
-</html> 
+    <script>
+        const spans = document.querySelector('aside').querySelectorAll('span');
+        const bar = document.querySelector(".fa-bars");
+        const aside = document.querySelector('aside');
+        const lists = document.querySelector('aside').querySelectorAll('a');
+        const carets = document.querySelectorAll('.fa-angle-down');
+        bar.addEventListener(('click'), function(){
+                event.stopPropagation();
+    spans.forEach((item)=>{ item.classList.toggle("hide");}
+    );
+    aside.classList.toggle('width');
+    lists.forEach((it)=>{it.classList.toggle('flex')});
+    carets.forEach((it)=>{it.classList.toggle('d-none')});
+    
+            })
+    </script>
+    <!-- <script>
+        
+           
+        document.querySelectorAll('li').forEach(item => {
+            
+    item.addEventListener('click', event => {
+    event.stopPropagation();
+    item.classList.toggle("red");
+    })
+    })
+    </script> -->
+    </body>
+</html>

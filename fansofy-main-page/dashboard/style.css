@@ -110,10 +110,13 @@ main{
     flex-wrap: nowrap !important;
 }
 
+
+
                 /* aside start  */
 
-                aside{
-                    width: clamp(274px, 30%, 300px) !important;
+                .aside{
+                    width: 25%;
+                    transition: 0.25s;
                 }
                     aside ul{
                     position: relative;
@@ -362,6 +365,26 @@ margin: 2rem auto;
 border: 1px solid transparent;
 }
 
+
+
+.hide{
+    opacity: 0;
+    white-space: nowrap;
+    /* display: inline-block; */
+    /* transition: all 0.4s; */
+}
+.width{
+    width: 50px;
+    /* transition: all 0.25s; */
+}
+.flex{
+    display: flex;
+    /* transition: all 0.4s; */
+    align-items: center;
+}
+.opacity{
+    opacity: 0;
+}
 
 
 
