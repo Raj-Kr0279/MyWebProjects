@@ -1,49 +1,43 @@
-body {
-	width: 90%;
-	margin: auto;
-}
-
-
-
-
-
-
-
 #svg-head {
-	font-size: 2rem;
 	margin-left: 4rem;
 	margin-top: 4rem;
-	font-weight: 900;
-    margin-bottom: 0;
+	margin-bottom: 0;
+	text-align: left;
+	font: normal normal bold 48px/57px Lato;
+	letter-spacing: 0px;
+	color: #6C6C6C;
+	opacity: 1;
 }
 
-.btn.btn-primary.create {
+.create {
 	margin-left: 4rem;
 	margin-top: 2rem;
 	border-radius: 15px;
 	padding: 0.4rem 1.5rem;
+	font-size: 1.25rem;
+	display: flex;
+	align-items: center;
+	background: #E464A0;
+	border: none;
+	color: white;
 }
 
-.create {
-	background: #E464A0;
-	border-radius: 20px;
-	padding: 5px 2rem;
-    color: white;
-    font-size: 1rem;
-margin-left: 4rem;
-border: none;
-}
-.fa-plus{
-    color: black;
-background: white;
-padding: 0.3rem;
-border-radius: 50%;
-margin-right: 1rem;
+.fa-plus {
+	color: #E464A0;
+	background: white;
+	padding: 0.3rem;
+	border-radius: 50%;
+	margin-right: 1rem;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #343434A3;
+	opacity: 1;
+	font-size: 0.88rem;
 }
 
 
 .grid-items .fa-language {
 	font-size: 21px;
+    color: black;
 }
 .serial {
 	width: 10px;
@@ -60,7 +54,7 @@ margin-right: 1rem;
 }
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 	gap: 2rem 4rem;
 	padding: 5rem;
 }
@@ -119,7 +113,7 @@ margin-right: 1rem;
   }
   
   .form-check-input:focus {
-      border: 1px solid #00000042;
+      border: 1px solid #0000001f;
       outline: none;
       box-shadow: none;
   }

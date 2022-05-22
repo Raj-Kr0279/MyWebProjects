@@ -11,33 +11,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="settings-general.css">
+   
 </head>
 <body>
-    <nav>
-        <div class="navContainer container-fluid">
-        <div class="row nav-cont" style="flex-wrap: nowrap;">
-            <div class="col-3 img-cont"><img src="images/logo.png" alt="">
-            </div>
-            
-              <div class=" col-9 top-bar"> 
-                <div class="left-icon"> <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
-               <div class="right-icon"> <i class="fa fa-home" aria-hidden="true"></i>
-                <i class="fa fa-user" aria-hidden="true"></i>
-            </div>
-                
-            </div>
-        </div>
+<!-- top navigation bar  -->
+<nav>
+    <div class="logo-container"><img id = "logo" src="images/logo.png" alt=""></div>
+    <div class="top-bar"> 
+        <div class="left-icon"> <i class="fa fa-bars" aria-hidden="true"></i></div>
+        <div class="right-icon"> <i class="fa fa-home" aria-hidden="true"></i><i class="fa fa-user" aria-hidden="true"></i></div>
     </div>
-    </nav>
-    <div class="row main-row">
+</nav>
+
+<!-- main area  -->
+<div class="row main-section">
 <!-- aside navbar   -->
 <aside class="aside">
     <ul class="accordion" id="accordionExample">
-            <li class="" style="border: 1px solid #0000002e;border-radius: 34px;background: #0000000d;backdrop-filter: blur(0px);"><a href="dashboard.html"><i aria-hidden="true" class="fa fa-gear"></i><span class="menu-label">Dashboard</span></a></li>
+            <li><a class = "aside-links" href="dashboard.html"><i aria-hidden="true" class="fa fa-gear"></i><span class="menu-label">Dashboard</span></a></li>
     
-            <li> <a data-bs-toggle="collapse" href="#Settings" role="button" aria-expanded="false" data-bs-target="#Settings"><i aria-hidden="true" class="fa fa-gear"></i><span>Settings</span><span   class="fa fa-angle-down collapsed" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#Settings" role="button" aria-expanded="false" data-bs-target="#Settings"><i aria-hidden="true" class="fa fa-gear"></i><span>Settings</span><span   class="fa fa-angle-down collapsed" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="Settings" data-bs-parent="#accordionExample">
                    <li><a href="settings-general.html">General</a></li>
                    <li><a href="set-limits.html">Limits</a></li>
@@ -46,35 +43,50 @@
                 </ul>
             </li>
     
-            <li><a href="email-set.html"><i class="fa fa-envelope" aria-hidden="true"></i></i><span>Email Setting</span></a></li>
+            <li><a class = "aside-links" href="email-set.html"><i class="fa fa-envelope" aria-hidden="true"></i></i><span>Email Setting</span></a></li>
     
-            <li><a href="live-stream-settings.html"><i class="fa fa-video" aria-hidden="true"></i><span>Live Stream Settings</span></a></li>
+            <li><a class = "aside-links" href="live-stream-settings.html"><i class="fa fa-video" aria-hidden="true"></i><span>Live Stream Settings</span></a></li>
+
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#storage" role="button" aria-expanded="false"><i class="fa fa-server"></i><span>Storage</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="storage" data-bs-parent="#accordionExample" style="">
+                    <li><a href="storage.html">S3 Storage Settings</a></li>
+                </ul>
+            </li>
     
-            <li> <a data-bs-toggle="collapse" href="#man-posts" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Posts</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#man-posts" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Posts</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="man-posts" data-bs-parent="#accordionExample" style="">
                     <li><a href="#">Post Report</a></li>
                     <li><a href="#">Posts</a></li>
                 </ul>
             </li>
+
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#design" role="button" aria-expanded="false" data-bs-target="#design"><i class="fa fa-palette"></i><span>Design</span><span   class="fa fa-angle-down collapsed" aria-hidden="true"></span></a>
+                <ul class="nested collapse" id="design" data-bs-parent="#accordionExample">
+                   <li><a href="#">Custom CSS/JS</a></li>
+                   <li><a href="manage-svg.html">Manage SVG Icons</a></li>
+                   <li><a href="#">Manage Landing Page</a></li>
+                   <li><a href="#">Landing Page Q&A</a></li>
+                </ul>
+            </li>
     
-            <li><a data-bs-toggle="collapse" href="#man-coin-feat" role="button" aria-expanded="false" ><i aria-hidden="true" class="fa fa-coins"></i><span>Manage Coin Feature</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li><a class = "aside-links" data-bs-toggle="collapse" href="#man-coin-feat" role="button" aria-expanded="false" ><i aria-hidden="true" class="fa fa-coins"></i><span>Manage Coin Feature</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="man-coin-feat" data-bs-parent="#accordionExample">
                      <li><a href="#">Coin Package Settings</a></li>
                 </ul>
             </li>
     
-            <li><a href="#"><i class="fa fa-language" aria-hidden="true"></i><span>Languages</span></a></li>
+            <li><a class = "aside-links" href="#"><i class="fa fa-language" aria-hidden="true"></i><span>Languages</span></a></li>
     
-            <li> <a data-bs-toggle="collapse" href="#users" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-users nested-i"></i><span>Users</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#users" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-users nested-i"></i><span>Users</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="users" data-bs-parent="#accordionExample">
                     <li><a href="#">Manage Users</a></li>
                     <li><a href="#">Creator Verification Request</a></li>
                 </ul>
              </li>
     
-            <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i><span>Pages</span></a></li>
+            <li><a class = "aside-links" href="#"><i class="fa fa-file" aria-hidden="true"></i><span>Pages</span></a></li>
     
-            <li> <a  data-bs-toggle="collapse" href="#page-role" role="button" aria-expanded="false"><i class="fa fa-file" aria-hidden="true"></i><span>Page Roles</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links"  data-bs-toggle="collapse" href="#page-role" role="button" aria-expanded="false"><i class="fa fa-file" aria-hidden="true"></i><span>Page Roles</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="page-role" data-bs-parent="#accordionExample" style="">
                     <li><a href="#">Account</a></li>
                     <li><a href="#">Verification</a></li>
@@ -82,9 +94,9 @@
                  </ul>
             </li>
     
-            <li><a href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Stickers</span></a></li>
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Stickers</span></a></li>
     
-            <li> <a data-bs-toggle="collapse" href="#pay-meth" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-credit-card"><div></div></i><span>Payment Methods</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#pay-meth" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-credit-card"><div></div></i><span>Payment Methods</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="pay-meth" data-bs-parent="#accordionExample">
                     <li><a href="#">Payment Settings</a></li>
                      <li><a href="#">Stripe</a></li>
@@ -92,16 +104,16 @@
                  </ul>
             </li>
     
-            <li><a href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Social Logins</span></a></li>
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Social Logins</span></a></li>
     
-            <li> <a data-bs-toggle="collapse" href="#manage-pay" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Payments</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#manage-pay" role="button" aria-expanded="false"><i aria-hidden="true" class="fa fa-gear"></i><span>Manage Payments</span><span class="fa fa-angle-down" aria-hidden="true"></span></a>
                 <ul class="nested collapse" id="manage-pay" data-bs-parent="#accordionExample">
                           <li><a href="#">Manage Withdrawals</a></li>
                           <li><a href="#">Manage Subscription Payment</a></li>
                 </ul>
             </li>
     
-            <li> <a data-bs-toggle="collapse" href="#advert" role="button" aria-expanded="false" data-bs-target="#advert" ><i aria-hidden="true" class="fa fa-globe"></i>
+            <li> <a class = "aside-links" data-bs-toggle="collapse" href="#advert" role="button" aria-expanded="false" data-bs-target="#advert" ><i aria-hidden="true" class="fa fa-globe"></i>
                         <span>Advertisement</span>
                         <span class="fa fa-angle-down" aria-hidden="true"></span>
                     </a>
@@ -111,56 +123,91 @@
                     </ul>
             </li>
     
-            <li><a href="#"><i aria-hidden="true" class="fa fa-globe"></i><span>Gify API</span></a></li>
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-globe"></i><span>Gify API</span></a></li>
     
-            <li><a href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Referrals</span></a></li>
+            <li><a class = "aside-links" href="#"><i aria-hidden="true" class="fa fa-gear"></i><span>Referrals</span></a></li>
                                                   
         </ul>
-    </aside>   
+    </aside>                                         
+                                                
+    
+<!-- main start     -->
 
 <main>
 
 
-<div class="heading"><h1>
-    General Settings
-</h1></div>
-
-<div class="middle-lang-sel-cont"><di style="display: flex;gap: 1rem;">
-    <div> <span>  Main Language</span></div>
-     <div><select name="language-picker-select" id="language-picker-select">
-         <option value="deutsch" lang="de">Deutsch</option>
-         <option value="english" selected="" lang="en">English</option>
-         <option value="francais" lang="fr">Français</option>
-         <option value="italiano" lang="it">Italiano</option>
- 
- 
-        
-       </select>
-       <p>Your selection is the main language that will be displayed when members register or visit the site.</p></div>
-       </di></div>
-<div class="form-check form-switch">
-    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked><span>IP Limit</span>
-    <p>Allows registration of new members on your website.</p>
+    <div class="heading"><h1>
+        General Settings
+    </h1></div>
     
-
-
-</div>
-
-
-</main>
-
-
-
-<script>
-    
-       
-    document.querySelectorAll('li').forEach(item => {
+    <div class="middle-lang-sel-cont"><di style="display: flex;gap: 1rem;">
+        <div> <span>  Main Language</span></div>
+         <div><select name="language-picker-select" id="language-picker-select">
+             <option value="deutsch" lang="de">Deutsch</option>
+             <option value="english" selected="" lang="en">English</option>
+             <option value="francais" lang="fr">Français</option>
+             <option value="italiano" lang="it">Italiano</option>
+     
+     
+            
+           </select>
+           <p>Your selection is the main language that will be displayed when members register or visit the site.</p></div>
+           </di></div>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked><span>IP Limit</span>
+        <p>Allows registration of new members on your website.</p>
         
-item.addEventListener('click', event => {
-event.stopPropagation();
-item.classList.toggle("red");
-})
-})
-</script>
+    
+    
+    </div>
+    
+    
+    </main>
+
+
+
+    <script>
+        const links = document.querySelectorAll('.aside-links');
+                links.forEach((event)=>{event.addEventListener('click', function(){
+                    this.classList.toggle('text-color-change');
+                    const childs = this.children;
+                 Array.from(childs).forEach(element => {
+                 element.classList.toggle('text-transparent');
+                 
+                 
+                 
+    });
+    
+                 })}) 
+    </script>
+    
+    <script>
+        const spans = document.querySelector('aside').querySelectorAll('span');
+        const bar = document.querySelector(".fa-bars");
+        const aside = document.querySelector('aside');
+        const lists = document.querySelector('aside').querySelectorAll('a');
+        const carets = document.querySelectorAll('.fa-angle-down');
+        const nested = document.querySelectorAll('.nested');
+        const logo = document.querySelector('.logo-container').querySelector('img');
+        const logo_container = document.querySelector('.logo-container');
+        bar.addEventListener(('click'), function(){
+                event.stopPropagation();
+                
+            logo_container.classList.toggle('logo-container-short');
+            logo.classList.toggle('logo-short');
+            var img = document.getElementById('logo').src;
+            if (img.indexOf('images/logo.png')!=-1) {
+                document.getElementById('logo').src  = 'images/logo-short.png';
+            }
+             else {
+               document.getElementById('logo').src = 'images/logo.png';
+           }
+    spans.forEach((item)=>{ item.classList.toggle("hide");} 
+    );
+    aside.classList.toggle('aside-short');
+    nested.forEach((it)=>{it.classList.toggle('d-none')});
+    
+            })
+    </script>
 </body>
 </html>
