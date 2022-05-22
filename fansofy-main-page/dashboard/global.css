@@ -47,6 +47,10 @@ input {
   padding: 3px 5px 4px;
   color: #979797;
   width: 190px;
+  padding: 0 14px;
+}
+input:focus-visible {
+	outline: none;
 }
 address,
 caption,
@@ -121,24 +125,26 @@ nav {
 
 .logo-container {
     width: 279px;
+    transition: 0.5s;
 }
 .logo-container-short{
   width: 61px;
 }
 .logo-short{
     width: 41px !important;
-margin-left: 10px;
+    margin-left: 10px;
 }
 
 .logo-container img {
-    width: 173px;
-  
-  height: auto;
+	width: 173px;
+	height: auto;
+	transition: 0.5s;
 }
+
+
 .top-bar {
-  flex: 1;
 	height: 50px;
-	width: 70%;
+	width: 755px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -149,10 +155,12 @@ margin-left: 10px;
 	border: 1px solid #FFFFFF;
 	border-radius: 38px;
 	opacity: 0.6;
-    margin: auto;
 	backdrop-filter: blur(45px);
 	-webkit-backdrop-filter: blur(45px);
+	transition: 0.5s;
 }
+
+
 .right-icon {
   display: flex;
   gap: 10px;
