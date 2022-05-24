@@ -1,11 +1,31 @@
+.top-head h1 {
+	display: flex;
+	align-items: center;
+}
+.top-head h1 i{
+	font-size: 1.7rem;
+margin-right: 1rem;
+}
+main{
+	padding: 3rem 1rem;
+}
+
+
+
 .images-boxes {
 	display: flex;
 	gap: 4rem;
 	justify-content: center;
+	margin-bottom: 5rem;
 }
 .frames {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	align-items: center;
+}
+.upload-help {
+	line-height: 2.5em;
 }
 
 .frame-boxes {
@@ -13,13 +33,24 @@
 	flex-direction: column;
 }
 
-.frame-boxes button {
+.frame-label.hidden {
+	opacity: 0;
+}
+
+.upload-button {
 	color: white;
 	background: #E464A0;
 	border: 1px transparent;
 	border-radius: 13px;
-	padding: 7px 22px;
-	width: 43%;
+	padding: 7px 6px;
+	width: 186px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.upload {
+	display: flex;
+	flex-direction: column;
 }
 
 .frames p {
@@ -28,6 +59,7 @@
 	letter-spacing: 0px;
 	color: #6C6C6C;
 	opacity: 1;
+	margin: 0 !important;
 }
 
 .frame-image-box {

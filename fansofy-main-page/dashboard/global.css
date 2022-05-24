@@ -146,6 +146,7 @@ nav {
 	height: 50px;
 	width: 755px;
 	display: flex;
+  flex: 1;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 26px;
@@ -158,6 +159,7 @@ nav {
 	backdrop-filter: blur(45px);
 	-webkit-backdrop-filter: blur(45px);
 	transition: 0.5s;
+
 }
 
 
@@ -168,8 +170,9 @@ nav {
 
 
 .main-section {
-    flex-wrap: nowrap !important;
-    gap: 1rem; 
+	flex-wrap: nowrap !important;
+	gap: 1rem;
+	justify-content: space-between;
 }
 
 /* aside start  */
@@ -248,6 +251,7 @@ aside li > a {
   /* main common items  */
   
   main {
+    flex: 1;
 	width: 70% !important;
     height: auto;
 	color: #6C6C6C;
