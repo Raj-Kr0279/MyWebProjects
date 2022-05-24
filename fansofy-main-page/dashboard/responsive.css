@@ -1,0 +1,30 @@
+@media only screen and (max-width: 800px){
+   
+   nav{
+       flex-direction: column;
+       align-items: center;
+       height: auto;
+   }
+   .top-bar{
+       width: 100% !important;
+       padding: 10px 26px;
+   }
+   
+   .logo-container{
+        display: flex;
+        justify-content: center;
+   }
+   
+    
+}
+
+@media only screen and (max-width: 765px){
+    aside{
+        width: 40px !important;
+        transition: 0.5s;
+       }
+       aside ul li span{
+           opacity: 0;
+           white-space: nowrap;
+       }
+}
