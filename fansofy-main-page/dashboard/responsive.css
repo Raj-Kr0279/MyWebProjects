@@ -1,4 +1,12 @@
-@media only screen and (max-width: 800px){
+
+/* aside and nav start */
+
+
+@media only screen and (max-width: 992px){
+
+    body{
+        margin-inline: 1rem;
+    }
    
    nav{
        flex-direction: column;
@@ -14,6 +22,19 @@
         display: flex;
         justify-content: center;
    }
+   main {
+	width: 70%;
+}
+.barDoughnut__chart__container{
+    grid-template-columns: 1fr;
+}
+.spline-chart-summary{
+    flex-direction: column;
+    height: auto;
+}
+.bottom-cards-container{
+    justify-content: center;
+}
    
     
 }
@@ -28,3 +49,5 @@
            white-space: nowrap;
        }
 }
+
+
