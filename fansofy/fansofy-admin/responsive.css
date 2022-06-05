@@ -10,7 +10,6 @@
 }
 @media only screen and (max-width: 576px) {
   .form-group {
-    display: grid;
     grid-template-columns: 1fr;
     justify-items: start;
     margin-bottom: 1rem;
@@ -21,10 +20,17 @@
     margin-top: 1rem;
   }
   .form-input {
-    width: 250px;
+    width: 200px;
   }
   .create {
     font-size: 1rem;
+  }
+  main{
+    padding: 3rem 0.5rem;
+  }
+  .top-head h1{
+    margin: 0;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 768px) {

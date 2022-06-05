@@ -35,7 +35,7 @@
     </nav>
 
     <!-- main area  -->
-    <div class="row g-0 main-section">
+    <div class="main-section"> 
         <!-- aside navbar   -->
         <aside class="aside">
             <ul class="accordion" id="accordionExample">
@@ -168,45 +168,77 @@
             </ul>
         </aside>
 
-
-
-        <!-- main start     -->
-
         <main>
+            <div class="top-head"><h1>Limits</h1></div>
+            <div class="form-container">
+                <form>
+                    <fieldset>
+                        <div class="form-group">
+                            <label class="form-label">Upload File Size Limit</label>
+                            <div class="inputGroupContainer">
+                                <select name="fileLimit" id="fileLimit">
+                                    <option value="deutsch" lang="de">Deutsch</option>
+                                    <option value="english" selected="" lang="en">5 MB</option>
+                                </select><span class="caption">IMPORTANT: Please pay attention to your server's default
+                                    maximum file upload size.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Post Length</label>
+                            <div class="inputGroupContainer">
+                                <select name="postLength" id="postLength">
+                                    <option value="deutsch" lang="de">IMAP</option>
+                                    <option value="english" selected="" lang="en">500 Characters</option>
+                                </select><span class="caption">It is the maximum character value that can be written to
+                                    a post.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Number of Post Show</label>
+                            <div class="inputGroupContainer">
+                                <select name="PostNum" id="PostNum">
+                                    <option value="deutsch" lang="de">IMAP</option>
+                                    <option value="english" selected="SSL" lang="en">10</option>
+                                </select><span class="caption">It is also the number of posts that will be displayed
+                                    when the page is scrolled.</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Show number of Pagination</label>
+                            <div class="inputGroupContainer">
+                                <select name="paginationNum" id="paginationNum">
+                                    <option value="deutsch" lang="de">IMAP</option>
+                                    <option value="english" selected="SSL" lang="en">10</option>
+                                </select><span class="caption">It is also the number of posts that will be displayed
+                                    when the page is scrolled.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Allowed file extension</label>
+                            <div class=" inputGroupContainer">
+                                <div class="saveBtnRel">
+                                    <input id="fileType" name="fileType"
+                                        placeholder="mp4,MP4,mp3,MP3,mpg,mov,m4v,avi,flv,mpeg,MPEG,webm,mkv,MKV,gif,GIF,jpg,jpeg,JPEG,JPG,PNG,png"
+                                        class="form-input" required="" value="" type="number"><span
+                                        class="caption mt-2">Separated with comma,</span>
+                                    <div class="form-group save-button-row">
+                                        <button style="margin-left: auto;">
+                                            Save
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
 
 
-            <div class="top-head">
-                <h1>
-                    General Settings
-                </h1>
+
+
             </div>
-
-            <div class="middle-lang-sel-cont">
-                <div style="display: flex;gap: 1rem;">
-                    <div> <span> Main Language</span></div>
-                    <div><select name="language-picker-select" id="language-picker-select">
-                            <option value="deutsch" lang="de">Deutsch</option>
-                            <option value="english" selected="" lang="en">English</option>
-                            <option value="francais" lang="fr">Français</option>
-                            <option value="italiano" lang="it">Italiano</option>
-
-
-
-                        </select>
-                        <p>Your selection is the main language that will be displayed when members register or visit the
-                            site.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked><span>IP
-                    Limit</span>
-                <p>Allows registration of new members on your website.</p>
-
-
-
-            </div>
-
         </main>
 
 
