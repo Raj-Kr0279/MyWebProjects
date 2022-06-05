@@ -118,6 +118,7 @@
   gap: 4rem;
   margin: auto;
   margin-top: 1rem;
+  place-content: space-evenly;
 }
 .fa.fa-circle {
   margin-right: 5px;
@@ -231,15 +232,7 @@
     color: transparent;
 }
 
-@media only screen and (max-width: 600px) {
-    .aside{
-        width: 50px;
-    }
-    .aside-links span{
-        opacity: 0;
-    }
 
-}
 
 
 

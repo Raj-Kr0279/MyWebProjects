@@ -1,13 +1,4 @@
-#svg-head {
-	margin-left: 4rem;
-	margin-top: 4rem;
-	margin-bottom: 0;
-	text-align: left;
-	font: normal normal bold 48px/57px Lato;
-	letter-spacing: 0px;
-	color: #6C6C6C;
-	opacity: 1;
-}
+
 
 .create {
 	margin-left: 4rem;
@@ -55,8 +46,9 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-	gap: 2rem 4rem;
+	gap: 2rem 3rem;
 	padding: 5rem;
+	place-items: center;
 }
 .grid-items {
 	display: flex;
@@ -66,77 +58,8 @@
 	background: white;
 	padding: 0 0.5rem;
 	border-radius: 10px;
+	width: 67px;
 }
 
-.form-switch {
-	padding: 0 !important;
-}
-.form-check .form-check-input {
-	float: left;
-	margin-left: 0 !important;
-}
 
-.serial span {
-	color: white;
-	font-size: 0.67rem;
-	font-weight: 900;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  .form-check-input:checked {
-    background-color: #e464a0;
-    border-color: #e464a0;
-  }
-  .form-check.form-switch span {
-      font-size: 1.2rem;
-      font-weight: 900;
-  }
-  .form-switch .form-check-input {
-      width: 25px !important;
-      margin-left: -2.5em;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-      background-position: left center;
-      border-radius: 2em;
-      transition: background-position .15s ease-in-out;
-      margin-top: 7px !important;
-  }
-  
-  .form-check-input:focus {
-      border: 1px solid #0000001f;
-      outline: none;
-      box-shadow: none;
-  }
-  
-  .form-switch .form-check-input:focus {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-  }
-  
-  
-  select {
-      word-wrap: normal;
-      background: #E464A0;
-      padding: 7px 38px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
-      background-repeat: no-repeat;
-      background-position-x: 94%;
-      background-position-y: 8px;
-      
-  }
   
