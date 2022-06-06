@@ -29,6 +29,9 @@ td {
   font-weight: 900;
 
 }
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin-inline: 3rem;
   padding: 0;
@@ -115,6 +118,8 @@ acronym {
 /* root  */
 :root{
 --accent: #e464a0;
+
+
 }
 
 .opacity {
@@ -262,6 +267,7 @@ aside li > a {
 .text-color-change{
     background-color: var(--accent);
     background-clip: text;
+    -webkit-background-clip: text;
 
 }
 .width {

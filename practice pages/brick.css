@@ -57,6 +57,7 @@
   margin-top: -1rem;
   text-transform: uppercase;
   color: transparent;
+  -webkit-background-clip: text;
 }
 
 .main-heading h3 {
@@ -224,3 +225,40 @@ margin-top: -2px;
     margin-top: 1rem;
   }
 }
+main {
+  margin:auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  gap: 2rem;
+  height: 80vh;
+  /* margin-top: 1rem; */
+}
+.side-img img{
+    max-width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 11/9;
+    width: 300px;
+  }
+  h1 {
+    position: relative;
+    font-size: 100px;
+    text-align: center;
+}
+
+h1 div {
+    background-image: linear-gradient(teal, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute; 
+    width: 100%;
+}
+h1:after {
+    text-shadow: 2px 2px 2px #000000;
+    color: transparent;
+}
+
+.gradient-shadow:after {
+    content: attr(title); /* Pulls the text from the 'title' attribute to make the shadow */
+}
+
