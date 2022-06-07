@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  /*   width: 100vw; */
+    font-family: Ubuntu;
+  }
+  a{
+    cursor: pointer;
+  }
+  
+  .nav{
+    box-sizing: border-box;
+    border:  1px solid black;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 8%;
+    align-items: center;
+      
+  }
+  .nav-left{
+    display: flex;
+    align-items: center
+  }
+  .nav-left img{
+    border-radius:40%;
+    
+  }
+  .nav-left a{
+    color: white;
+  /*   text-transform: uppercase; */
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size:1.2rem;
+    
+  }
+  .nav-left a:hover{
+    text-decoration: underline;
+    
+  }
+  .nav-right{
+    display: flex;
+    align-items: center;
+  }
+  .nav-right input{
+    margin-right: 10px;
+    padding: 3% 4%;
+    border: 1px solid white;
+    background: transparent;
+    color: grey;
+    letter-spacing: 1.5px;
+  }
+  .nav-right input:focus{
+    padding: 3% 4%;
+    outline: none;
+    background: white;
+    color: black;
+  }
+  .links{
+    margin-left: 10px;
+  }
+  .middle{
+    text-align: center;
+    line-height: 1;
+    padding: 2rem 5rem;
+  }
+  .middle h2 a{
+    color: blue;
+    text-transform: uppercase;
+   }
+  .middle p{
+    line-height: 0.4;
+    font-size: 1.2rem;
+    
+  }
+  .fab{
+    color: white;
+    padding: 2% 3%;
+  }
+  
+  .links-down{
+    background: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1% 4%;
+    align-items: center;
+    }
+  .links-down a{
+    display: block;
+    text-decoration: none;
+    margin-top: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    
+  }
+  
+  .links-down .fab, .links-down .fas{
+    color: black;
+    font-size: 1.3rem;
+    color: black;
+  
+  }
+  #fasja{
+    margin-left: 10px;
+    font-size: 1.16rem;
+    
+  }
+  .box3 a, .box4 a{
+    margin-top: 5px;
+  }
+  
+  
