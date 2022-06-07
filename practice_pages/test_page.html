@@ -13,30 +13,32 @@
     crossorigin="anonymous"></script>
 
     <style>
-    .container{
+    .container-fluid{
         display: flex;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
     }
     .card-content {
-    display: flex;
-    justify-content: space-between;
+        display: grid;
+        grid-template-columns: 4fr 1fr;
 }
 .desc {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
-.appy-btn {
+/* .appy-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.appy-btn{
-    background-color: green;
+} */
+.appy-btn {
+    background-color: #008000b5;
     color: white;
     padding: 5px 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
 .cards {
     border: 1px solid  #0000002e;
@@ -52,28 +54,56 @@ i{
 .card-content {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+}
+.apply{
+    width: 130px;
+}
+.card-text h3 {
+    font-size: clamp(1.2rem, 3vw, 2.2rem);
+    font-weight: 600;
+}
+.cont i, .cont span {
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: #00000078;
 }
 
+@media only screen and (max-width: 600px){
+    
+    .card-content {
+        display: grid;
+        grid-template-columns: 1fr;
+}
+}
+@media only screen and (max-width: 416px){
+    .desc{
+        gap: 0;
+    }
+}
 
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="top-header m-3">
+        <h1>Latest Jobs</h1>
+        <hr>
+    </div>
+    <div class="container-fluid">
         <div class="cards">
            <div class="card-content">
                <div class="card-text">
-               <h3>Project Manager @<small>Dominos Pizza</small></h3> 
+               <h3>Project Manager @ <small>Dominos Pizza</small></h3> 
+
                <div class="desc">
                    <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>San Francisco, US</span></div>
+                    <span>San Francisco, CA, US</span></div>
                    <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
-                    <span>San Francisco, US</span></div>
+                    <span>$25,000-$35,000</span></div>
                    
                </div>
             </div>
-            <div class="my-auto">
+            <div class="my-auto mt-2 my-sm-auto apply">
                 <a class="appy-btn">Apply Now</a>
             </div>
            </div> 
@@ -82,13 +112,17 @@ i{
         <div class="cards">
             <div class="card-content">
                 <div class="card-text">
-                    <h3>Project Manager @<small>Dominos Pizza</small></h3> 
-                    <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
-                       <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
+                    <h3>Graphics Designer @ <small>AOK Security</small></h3> 
+
+                     <div class="desc">
+                   <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>San Francisco, US</span></div>
+                   <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
+                    <span>$25,000-$35,000</span></div>
+                   
+               </div>
              </div>
-             <div class="my-auto">
+             <div class="my-auto mt-2 my-sm-auto apply">
                  <a class="appy-btn">Apply Now</a>
              </div>
             </div> 
@@ -97,13 +131,16 @@ i{
          <div class="cards">
             <div class="card-content">
                 <div class="card-text">
-                    <h3>Project Manager @<small>Dominos Pizza</small></h3> 
-                    <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
-                       <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
+                    <h3>CTO @ <small>Volja Events & Entertainment</small></h3> 
+                    <div class="desc">
+                        <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                         <span>San Francisco, US</span></div>
+                        <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
+                         <span>$25,000-$35,000</span></div>
+                        
+                    </div>
              </div>
-             <div class="my-auto">
+             <div class="my-auto mt-2 my-sm-auto apply">
                  <a class="appy-btn">Apply Now</a>
              </div>
             </div> 
@@ -112,13 +149,16 @@ i{
          <div class="cards">
             <div class="card-content">
                 <div class="card-text">
-                    <h3>Project Manager @<small>Dominos Pizza</small></h3> 
-                    <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
-                       <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
-                        <span>San Francisco, US</span></div>
+                    <h3>Human Resource Manager @ <small>Dropbox Inc</small></h3> 
+                    <div class="desc">
+                        <div class="cont"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                         <span>San Francisco, US</span></div>
+                        <div class="cont"><i class="fa fa-money" aria-hidden="true"></i>
+                         <span>$25,000-$35,000</span></div>
+                        
+                    </div>
              </div>
-             <div class="my-auto">
+             <div class="my-auto mt-2 my-sm-auto apply">
                  <a class="appy-btn">Apply Now</a>
              </div>
             </div> 
