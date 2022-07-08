@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@100;200;300;400;500;600;800;900&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+html {
+  font-size: 16px;
+}
+
 * {
   font-family: "Poppins";
   outline: none;
@@ -18,7 +22,6 @@ a {
   position: relative;
   height: 100vh;
   width: 100%;
-  margin-bottom: 1rem;
 }
 .main .landing-outer {
   position: absolute;
@@ -83,7 +86,40 @@ a {
   border: 1px solid black;
 }
 
-.howto-outer {
+.howto {
+  background: url("./imagess/travvy-hero.svg");
+  height: 100vh;
+  background-position: bottom;
+  background-size: 1920px auto;
+}
+.howto .howto-content {
+  max-width: 45ch;
+  margin-left: auto;
+  padding: 3rem;
+  margin-right: 13rem;
+}
+.howto .howto-content h3 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 900;
+}
+.howto .howto-content p {
+  font-size: clamp(0.7rem, 1.6vw, 1.3rem);
+}
+.howto .howto-content button {
+  padding: 10px 2rem;
+  border: none;
+  background: blanchedalmond;
+  border-radius: 20px;
+  color: rgba(165, 42, 42, 0.67843);
+}
+
+.plan {
+  background: antiquewhite;
+  padding-block: 2rem;
+  height: 100vh;
+}
+
+.plan-outer {
   margin: auto;
   display: flex;
   align-items: center;
@@ -94,13 +130,15 @@ a {
   padding: unset;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid white;
   height: 500px;
   width: 320px;
-  box-shadow: 0px 9px 15px 1px rgba(0, 0, 0, 0.19);
+  background: white;
   overflow: hidden;
   border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+.dest-cards:hover {
+  box-shadow: 0px 9px 15px 1px rgba(0, 0, 0, 0.19);
 }
 .dest-cards img {
   width: 100%;
@@ -109,10 +147,38 @@ a {
 
 .content {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.content h2 {
+  font-size: clamp(1.2rem, 2.79vw, 1.8rem);
+}
+.content #dest-details li {
+  list-style-type: disclosure-open;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+.content h3 {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+  font-weight: 900;
+}
+.content button {
+  padding: 7px 1rem;
+  border: none;
+  background: blanchedalmond;
+  border-radius: 20px;
+  color: rgba(165, 42, 42, 0.6784313725);
+  width: 90%;
+  margin-top: 1rem;
+  margin-inline: auto;
+  transition: all 0.25s ease-in-out;
+}
+.content button:hover {
+  background-color: rgba(249, 135, 123, 0.9098039216);
+  color: white;
 }
 
 .dest-img::after {
-  content: "kerala";
+  content: "";
   position: absolute;
   inset: 0;
 }
@@ -123,17 +189,17 @@ a {
 
 .himachal {
   background: url("./imagess/himachal.jpg") center center/cover;
-  height: 50%;
+  height: 40%;
 }
 
 .kerala {
   background: url("./imagess/kerala.jpg") center center/cover;
-  height: 50%;
+  height: 40%;
 }
 
 .goa {
   background: url("./imagess/goa.jpg") center center/cover;
-  height: 50%;
+  height: 40%;
 }
 
 .cards-bg {
@@ -162,6 +228,7 @@ div#navbarNavAltMarkup {
 
 .scrolled {
   background: white !important;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2392156863);
   position: fixed;
   top: 0;
   z-index: 1020;
@@ -191,7 +258,6 @@ div#navbarNavAltMarkup {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: transparent !important;
 }
 
 .navbar {
@@ -351,11 +417,10 @@ div#navbarNavAltMarkup {
 
 /* footer */
 .footer {
-  background: #1e1d1d;
-  color: white;
+  background: #ffefdb;
+  color: black;
   padding: 0.5rem 2rem;
   padding-bottom: 0;
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -417,6 +482,26 @@ hr:not([size]) {
   }
 }
 @media only screen and (max-width: 600px) {
+  .main .landing-outer {
+    height: 280px;
+    width: 66%;
+  }
+  .main .landing-inner {
+    text-align: left;
+    padding: 1rem;
+  }
+  .main .dwn-links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .dwn-links a {
+    font-size: 10px;
+    width: 60%;
+    margin: 5px auto;
+    padding: 7px 11px;
+  }
+
   #carouselExampleControls {
     margin-top: 3.8rem;
   }
@@ -467,6 +552,30 @@ hr:not([size]) {
 	clip-path: polygon(0% 50%, 100% 0%, 73% 51%, 99% 100%);
 } */
 @media (min-width: 1920px) {
+  .main .landing-outer {
+    height: 80%;
+    width: 36%;
+  }
+  .main .landing-inner {
+    padding: 6rem 3rem 1rem 3rem;
+  }
+  .main h1 {
+    font-size: 96px;
+  }
+  .main h3 {
+    padding: 4rem 0;
+    font-size: 40px;
+  }
+
+  .dwn-links {
+    margin-top: 7rem;
+  }
+  .dwn-links a {
+    padding: 1rem 2rem;
+    border-radius: 28px;
+    font-size: 2rem;
+  }
+
   body {
     background-color: orange;
   }
